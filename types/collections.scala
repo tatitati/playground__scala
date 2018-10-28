@@ -8,7 +8,6 @@ print(colors(1)) // orange
 // sets
 val cities = Set("Madrid", "Barcelona", "Madrid", "Barcelona", "Zurich")
 print(cities) // Set(Madrid, Barcelona, Zurich)
-print(cities(1))
 
 
 
