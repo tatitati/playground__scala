@@ -11,3 +11,9 @@ sayHello(from = "whoever", to = "francisco") // Good morning francisco, from who
 //
 val helloTo = (name: String) => print(s"hello ${name} !!")
 helloTo("David") // hello David !!
+
+
+
+//
+// Generics functions
+// 

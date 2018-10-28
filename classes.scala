@@ -26,3 +26,8 @@ class BasicUser(named: String) extends User(named) {
 
 var basicUser = new BasicUser(named = "Ricardo")
 print(basicUser.greet) // good by Ricardo
+
+
+//
+// Generics class
+// 
