@@ -32,6 +32,13 @@ println(concat(10, 30)(3600)) // Position: (10, 30), at moment: 3600
 
 
 
+// can return tuples, etc
+def returnMultiple(): (Int, Double) = {
+    return (34, 89.35)
+}
+val (number1, number2) = returnMultiple()
+println(number1) // 34
+println(number2) // 89.35
 
 
 
