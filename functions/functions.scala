@@ -1,17 +1,16 @@
-def hi = println("hello")
-hi // hello
+def hi = "hello"
+println(hi) // hello
 //hi() // error: it was specified without parenthesis
 
-def hi2() = println("hello2")
-hi2 // hello2 : it can be invoked with and without parenthesis as it was defined with parenthesis
-hi2() // hello2
+def hi2: String = "hello2"
+println(hi2) // hello2
 
 
 
+def hi3() = "hello3"
+println(hi3) // hello3 : it can be invoked with and without parenthesis as it was defined with parenthesis
+println(hi3()) // hello3
 
-
-def hello: String = "hello again"
-println(hello) // hello again
 
 
 
