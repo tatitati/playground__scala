@@ -3,15 +3,14 @@
 //
 class User(named: String){
     val age: Int = 34
-    val name: String = named
     def greet() {
-        print(s"Hi ${name}")
+        println(s"Hi ${named}")
     }
 }
 
 var user = new User("manolo")
-user.greet() // hi manolo
-print(user.age) // 34
+user.greet // hi manolo
+println(user.age) // 34
 
 
 //
@@ -19,13 +18,21 @@ print(user.age) // 34
 //
 class BasicUser(named: String) extends User(named) {
     override def greet() {
-        print(s"good bye ${name}")
+        println(s"good bye ${named}")
     }
 }
 
 
 var basicUser = new BasicUser(named = "Ricardo")
-print(basicUser.greet) // good by Ricardo
+println(basicUser.greet) // good bye Ricardo
+
+
+//
+// We can have more control by using var/val and override
+//
+//class Animal(val countryOrigin: String, var amountLegs: Int) {
+//
+//}
 
 
 //
