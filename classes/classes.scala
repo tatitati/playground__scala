@@ -10,6 +10,7 @@ class User(named: String){
 
 var user = new User("manolo")
 user.greet // hi manolo
+user.greet() // hi manolo
 println(user.age) // 34
 
 
