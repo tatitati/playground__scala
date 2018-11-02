@@ -2,13 +2,13 @@
 // Basic class
 //
 class User(named: String){
+    println("this was created!") // is executed everytime an object is created
     val age: Int = 34
     def greet() {
         println(s"Hi ${named}")
     }
 }
-
-var user = new User("manolo")
+var user = new User("manolo") // this was created!
 user.greet // hi manolo
 user.greet() // hi manolo
 println(user.age) // 34
@@ -22,9 +22,7 @@ class BasicUser(named: String) extends User(named) {
         println(s"good bye ${named}")
     }
 }
-
-
-var basicUser = new BasicUser(named = "Ricardo")
+var basicUser = new BasicUser(named = "Ricardo") // this was created!
 println(basicUser.greet) // good bye Ricardo
 
 
