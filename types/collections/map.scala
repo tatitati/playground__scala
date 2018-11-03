@@ -17,3 +17,5 @@ var personMapUpdated2 = personAge + ("Paco" -> 111)
 println(personMapUpdated2) // Map(Paco -> 111)
 personMapUpdated2 += ("Paco" -> 999)
 println(personMapUpdated2) // Map(Paco -> 999)
+
+// increment item in map ?
