@@ -18,4 +18,17 @@ println(personMapUpdated2) // Map(Paco -> 111)
 personMapUpdated2 += ("Paco" -> 999)
 println(personMapUpdated2) // Map(Paco -> 999)
 
-// increment item in map ?
+// get
+var mymap = Map("city" -> "Madrid")
+println(mymap("city")) // Madrid
+println(mymap.get("city")) // Some(Madrid)
+println(mymap.get("whatever")) // None
+
+// getOrElse
+
+
+
+
+// default value
+mymap = Map("city" -> "Madrid").withDefaultValue("not found")
+println(mymap("wrong")) // not found
