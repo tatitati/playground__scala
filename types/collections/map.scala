@@ -18,6 +18,11 @@ println(personMapUpdated2) // Map(Paco -> 111)
 personMapUpdated2 += ("Paco" -> 999)
 println(personMapUpdated2) // Map(Paco -> 999)
 
+// update item with val (immutable elements)
+val persons2 = Map("Australia" -> "Michael", "Spain" -> "Francisco")
+var newPersons2 = persons2.updated("Australia", "this is my new value")
+println(newPersons2) // Map(Australia -> this is my new value, Spain -> Francisco)
+
 // get
 var mymap = Map("city" -> "Madrid")
 println(mymap("city")) // Madrid
@@ -28,7 +33,6 @@ println(mymap.get("whatever")) // None
 mymap = Map("city" -> "Madrid")
 println(mymap.getOrElse("city", "city not found")) // Madrid
 println(mymap.getOrElse("wrong", "city not found")) // city not found
-
 
 
 // default value
