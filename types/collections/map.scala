@@ -25,7 +25,9 @@ println(mymap.get("city")) // Some(Madrid)
 println(mymap.get("whatever")) // None
 
 // getOrElse
-
+mymap = Map("city" -> "Madrid")
+println(mymap.getOrElse("city", "city not found")) // Madrid
+println(mymap.getOrElse("wrong", "city not found")) // city not found
 
 
 
