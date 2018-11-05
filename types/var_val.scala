@@ -20,7 +20,3 @@ val myvariable: String =
         "is less than 50"
 
 println(myvariable) // is less than 50
-
-
-val doubler: Int => Int = _ * 2
-println(doubler(4)) // 8
