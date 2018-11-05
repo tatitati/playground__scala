@@ -14,6 +14,10 @@ println(val2) // 12
 
 
 
+
+
+
+
 // invokation of method with "block expresion {}" instead of simple "()"
 def squarer(x: Int): Int = {
 	x * x
