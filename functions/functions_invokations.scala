@@ -2,6 +2,10 @@ class MyClass() {
 	def doubler(x: Int): Int = {
 		x * 2
 	}
+
+	def summer(x: Int, y: Int): Int = {
+		x + y
+	}
 }
 
 val val0 = new MyClass()
@@ -13,7 +17,9 @@ println(val1) // 12
 println(val2) // 12
 
 
-
+// same but for multiple parameters
+var val3 = val0 summer (3,2)
+println(val3) // 5
 
 
 
