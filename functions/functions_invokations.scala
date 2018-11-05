@@ -6,7 +6,7 @@ class MyClass() {
 
 val val0 = new MyClass()
 
-// invokation of methodd with "operator notation"
+// invokation of methodd with "operator notation" instead of the simple "."
 var val1 = val0 doubler 6
 var val2 = val0.doubler(6)
 println(val1) // 12
@@ -14,6 +14,7 @@ println(val2) // 12
 
 
 
+// invokation of method with "block expresion {}" instead of simple "()"
 def squarer(x: Int): Int = {
 	x * x
 }
