@@ -20,6 +20,7 @@ object Person2 {
 	}
 }
 println(Person2("this is something!!!")) // this is something!!!
+println(Person2 {"this is something!!!" + "blabla blablba"}) // this is something!!!blabla blablba
 
 //
 // Object as companion object to de-couple static methods
@@ -48,9 +49,8 @@ object Person4 {
 class Person4(val age: Int, val name: String) {
 
 }
-val myperson4 = Person4(33)
+var myperson4 = Person4(33)
 println(myperson4.age) // 33
 println(myperson4.name) // default name
-
 
 
