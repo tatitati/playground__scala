@@ -16,12 +16,22 @@ trait Continent {
     }
 }
 
-class Africa(amount: Int) extends Continent with Planet with Galaxy{
+
+class Africa(amount: Int) extends Galaxy with Planet with Continent {
     var population: Int = amount
 }
 
+
+
+// Linearization result
+//
+//      Galaxy
+//          Planet
+//              Continent
+//                  Africa
+
 var africa = new Africa(2323)
-print(africa.population) // 2323
-print(africa.getPopulation()) // I'm continent
-print(africa.getName()) // I'm planet
-print(africa.getAmountStars()) // I'm Galaxy
+println(africa.population) // 2323
+println(africa.getPopulation()) // I'm continent
+println(africa.getName()) // I'm planet
+println(africa.getAmountStars()) // I'm Galaxy
