@@ -18,7 +18,8 @@ object Person2 {
 	}
 }
 println(Person2("this is something!!!")) // this is something!!!
-println(Person2 {"this is something!!!" + "blabla blablba"}) // this is something!!!blabla blablba
+// this is translated to Person2.apply(...), so as with any other function invokation, we can use block expression:
+println(Person2 {"this is something!!!" + "blabla blablba"})
 
 
 
