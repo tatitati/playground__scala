@@ -13,7 +13,7 @@ println(personAge) // Map()
 var personMapUpdated1 = personAge + ("Paco" -> 232)
 personMapUpdated1 += ("Manoli" -> 555)
 println(personMapUpdated1) // Map(Paco -> 232, Manoli -> 555)
-println(personMapUpdated1.getClass) // class scala.collection.immutable.Map -----> IF IS IMMUTABLE HOW CAN BE THIS MODIFIED!?!??!
+println(personMapUpdated1.getClass)
 
 // update item
 var personMapUpdated2 = personAge + ("Paco" -> 111)
