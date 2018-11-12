@@ -38,3 +38,10 @@ println(mymap.getOrElse("wrong", "city not found")) // city not found
 // default value
 mymap = Map("city" -> "Madrid").withDefaultValue("not found")
 println(mymap("wrong")) // not found
+
+
+
+//
+// Map is an immutable object, how can be this modified in the previous examples!?!??!?!?!?!?!?!?!?!?!?!?!??!?!?!?
+//
+//
