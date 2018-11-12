@@ -32,8 +32,3 @@ println(basicUser.greet) // good bye Ricardo
 //class Animal(val countryOrigin: String, var amountLegs: Int) {
 //
 //}
-
-
-//
-// Generics class
-// 
