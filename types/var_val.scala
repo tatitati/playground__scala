@@ -3,7 +3,7 @@ val mynumber1: Int = 5
 println(mynumber1) // 5
 
 
-// var can be modified
+// VAR can be modified
 var mynumber2: Int = 5
 mynumber2 = 1212
 println(mynumber2) // 1212
