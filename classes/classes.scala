@@ -42,12 +42,6 @@ class BasicUser(named: String, surname: String, weight: Int) extends User(named,
     }
 }
 var basicUser = new BasicUser(named = "Ricardo", "Ruiz", 34) // this was created!
+basicUser.surname = "a new surname" // if we want to keep the same accesibility than the parent we don't need to add var/val (is inherited), only for the new attributes need to be added
 println(basicUser.greet) // good bye Ricardo
-
-
-//
-// We can have more control by using var/val and override
-//
-//class Animal(val countryOrigin: String, var amountLegs: Int) {
-//
-//}
+println(basicUser.surname) // a new surname
