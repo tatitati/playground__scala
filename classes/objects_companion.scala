@@ -38,7 +38,7 @@ println(Person3.saySomething("this is something!!!")) // this is something!!!
 
 
 //
-// Apply method as factory method 
+// Apply method as factory method
 //
 object Person4 {
 	def apply(age: Int): Person4  = {
