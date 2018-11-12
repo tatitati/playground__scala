@@ -10,7 +10,7 @@ println(mynumber2) // 1212
 
 
 //
-// computed variables
+// computed variables (in scala this is named: "Block expression")
 //
 val number3: Int = 40;
 val myvariable: String = {
