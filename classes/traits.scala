@@ -1,22 +1,16 @@
+
+//
+// Linearization
+//
 trait Galaxy {
-    def getAmountStars() {
-        print("I'm Galaxy")
-    }
+    def getAmountStars() {print("I'm Galaxy")}
 }
-
 trait Planet {
-    def getName() {
-        print("I'm planet")
-    }
+    def getName() {print("I'm planet")}
 }
-
 trait Continent {
-    def getPopulation() {
-        print("I'm continent")
-    }
+    def getPopulation() {print("I'm continent")}
 }
-
-
 class Africa(amount: Int) extends Galaxy with Planet with Continent {
     var population: Int = amount
 }
