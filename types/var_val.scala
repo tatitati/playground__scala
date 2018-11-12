@@ -13,10 +13,11 @@ println(mynumber2) // 1212
 // computed variables
 //
 val number3: Int = 40;
-val myvariable: String =
-    if (number3 > 50)
-        "is bigger than 50"
-    else
-        "is less than 50"
+val myvariable: String = {
+        if (number3 > 50)
+                "is bigger than 50"
+        else
+                "is less than 50"
+}
 
 println(myvariable) // is less than 50
