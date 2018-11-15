@@ -1,3 +1,24 @@
+//
+// traits as interfaces
+//
+trait Human {
+    def speak(message: String) :String
+    def getGender(): String
+}
+
+class Man extends Human {
+    override def speak(message: String): String = {
+        message + "!!!!!"
+    }
+
+    override def getGender(): String = {
+        "Male"
+    }
+}
+
+
+
+
 
 //
 // Linearization
@@ -29,14 +50,6 @@ println(africa.population) // 2323
 println(africa.getPopulation()) // I'm continent
 println(africa.getName()) // I'm planet
 println(africa.getAmountStars()) // I'm Galaxy
-
-//
-// traits as interfaces
-//
-
-
-
-
 
 
 
