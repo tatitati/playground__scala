@@ -18,6 +18,14 @@ class Man extends Human {
 
 
 
+//
+// traits used in instantiation
+//
+
+
+
+
+
 
 
 //
@@ -50,10 +58,3 @@ println(africa.population) // 2323
 println(africa.getPopulation()) // I'm continent
 println(africa.getName()) // I'm planet
 println(africa.getAmountStars()) // I'm Galaxy
-
-
-
-//
-// traits used in instantiation
-//
-
