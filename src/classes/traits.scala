@@ -18,6 +18,35 @@ class Man extends Human {
 
 
 
+
+
+
+//
+// Traits as abstract classes
+//
+trait Human2 {
+    def speak(message: String) :String = {
+        message + "##########"
+    }
+
+    def getGender(): String // abstract method
+}
+
+class Man2 extends Human2 {
+    override def getGender(): String = {
+        "Male"
+    }
+}
+
+val man2 = new Man2()
+println(man2.speak("SAY SOMETHING")) // SAY SOMETHING##########
+
+
+
+
+
+
+
 //
 // traits used in instantiation
 //
