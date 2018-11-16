@@ -47,7 +47,6 @@ println(man2.getGender()) // Male
 
 
 
-
 //
 // traits used in instantiation (AKA decorators/Stackable traits design pattern)
 //
