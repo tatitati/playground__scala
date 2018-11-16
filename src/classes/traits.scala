@@ -51,7 +51,6 @@ println(man2.getGender()) // Male
 //
 // traits used in instantiation (AKA decorators/Stackable traits design pattern)
 //
-
 class Human3 {
     def saySomething(msg: String): String = {
         msg + "------------"
