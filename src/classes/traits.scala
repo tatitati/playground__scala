@@ -1,4 +1,20 @@
 //
+// Traits as classes
+//
+trait Animal {
+    def getAge(): Int = {
+        35
+    }
+}
+
+val animal = new Animal {}
+println(animal.getAge()) // 35
+
+
+
+
+
+//
 // traits as interfaces
 //
 trait Human {
