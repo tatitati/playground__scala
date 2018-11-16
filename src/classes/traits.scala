@@ -35,8 +35,6 @@ class Man extends Human {
 
 
 
-
-
 //
 // Traits as abstract classes
 //
