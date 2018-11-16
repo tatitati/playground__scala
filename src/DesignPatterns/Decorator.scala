@@ -1,4 +1,6 @@
 //
+// Decorator: The scala way (also is possible as usual)
+//
 // traits used in instantiation (AKA decorators/Stackable traits design pattern)
 //
 class Human3 {
