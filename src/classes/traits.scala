@@ -40,6 +40,7 @@ class Man2 extends Human2 {
 
 val man2 = new Man2()
 println(man2.speak("SAY SOMETHING")) // SAY SOMETHING##########
+println(man2.getGender()) // Male
 
 
 
@@ -48,8 +49,33 @@ println(man2.speak("SAY SOMETHING")) // SAY SOMETHING##########
 
 
 //
-// traits used in instantiation
+// traits used in instantiation (AKA decorators/Stackable traits design pattern)
 //
+
+class Human3 {
+    def saySomething(msg: String): String = {
+        msg + "------------"
+    }
+}
+
+trait HappyDecorator extends Human3 {
+    override def saySomething(msg: String): String = {
+        super.saySomething(msg) + ":))))))))))))"
+    }
+}
+
+trait SadDecorator extends Human3 {
+    override def saySomething(msg: String): String = {
+        super.saySomething(msg) + ":_________("
+    }
+}
+
+
+val human4 = new Human3() with HappyDecorator
+println(human4.saySomething("THIS IS MY MSG")) // THIS IS MY MSG------------:))))))))))))
+
+val human5 = new Human3() with SadDecorator
+println(human5.saySomething("THIS IS MY MSG")) // THIS IS MY MSG------------:_________(
 
 
 
