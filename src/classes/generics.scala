@@ -37,7 +37,9 @@ println(foreigner0.isFrom()) // I'm from Africa
 
 
 
-
+//
+// You can specify also WITH to have a common base
+//
 class Foreigner2[A <: Russian with Human](foreigner: A) {
 	def isFrom(): String = {
 		foreigner.isFrom()
