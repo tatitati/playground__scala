@@ -29,7 +29,23 @@ class Foreigner0[A <: Human](foreigner: A) {
 }
 val african0 = new African()
 val foreigner0 = new Foreigner0[African](african0)
-println(foreigner0.isFrom())
+println(foreigner0.isFrom()) // I'm from Africa
+
+
+
+
+
+
+
+
+class Foreigner2[A <: Russian with Human](foreigner: A) {
+	def isFrom(): String = {
+		foreigner.isFrom()
+	}
+}
+val african2 = new African()
+val foreigner2 = new Foreigner0[African](african2)
+println(foreigner2.isFrom()) // I'm from Africa
 
 
 
@@ -51,4 +67,4 @@ class Foreigner1[A <: { def isFrom(): String }](foreigner: A) {
 
 val african1 = new African()
 val foreigner1 = new Foreigner1[African](african1)
-println(foreigner1.isFrom())
+println(foreigner1.isFrom()) // I'm from Africa
