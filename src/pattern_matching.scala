@@ -68,3 +68,23 @@ def makeNoise4(animal: Animal): String = {
 	}
 }
 println(makeNoise4(Herb())) // miumiumiu 1
+
+
+
+
+//
+// You can do the same with the return values of a functions, Generics types, etc, for example:
+//
+def makeNoise5() = {
+
+	("hola", "hi", "bonjour")
+}
+
+val (spanish, english, bonjour) = makeNoise5()
+println(spanish) // hola
+
+val (spanish1, _, _) = makeNoise5()
+println(spanish1) // hola
+
+val (spanish2, _, "bonjour") = makeNoise5()
+println(spanish2) // hola
