@@ -94,7 +94,7 @@ println(human5.saySomething("THIS IS MY MSG")) // THIS IS MY MSG------------:___
 
 
 
-
+//
 //Extending a class with traits, Linearization
 //
 trait Galaxy {
