@@ -1,5 +1,5 @@
 //
-// Traits as classes
+// Traits can be instantiated as classes
 //
 trait Animal {
     def getAge(): Int = {
@@ -15,7 +15,7 @@ println(animal.getAge()) // 35
 
 
 //
-// traits as interfaces
+// traits used as interfaces
 //
 trait Human {
     def speak(message: String) :String
