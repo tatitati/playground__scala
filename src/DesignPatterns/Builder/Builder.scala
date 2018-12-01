@@ -29,5 +29,7 @@ val human1 = builder
 		.withName("Ricardo")
 		.withAge(20)
 		.build()
+val human2 = builder withName("Ricardo") withAge(20) build()
 
 println(human1) // My name is Ricardo and my age is: 20
+println(human2) // My name is Ricardo and my age is: 20
