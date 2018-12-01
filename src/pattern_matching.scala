@@ -72,6 +72,29 @@ println(makeNoise4(Herb())) // miumiumiu 1
 
 
 
+
+
+
+// you can use a custom matcher
+def makeNoise6(httpResponse: String): String = {
+	httpResponse match {
+		case ValidHttpResponse() => s"the response ${httpResponse} is VALID"
+		case _ => "no matched"
+	}
+}
+object ValidHttpResponse {
+	def unapply(arg: String): Boolean = {
+		arg == "200" || arg == "201" || arg == "204"
+	}
+}
+println(makeNoise6("200")) // the response 200 is VALID
+
+
+
+
+
+
+
 //
 // You can do the same with the return values of a functions, Generics types, etc, for example:
 //
