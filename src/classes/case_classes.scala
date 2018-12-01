@@ -12,3 +12,11 @@ println(person1.age) // 33
 
 
 
+// class classes can have also custom methods
+case class Person2(name: String, var age: Int) {
+	def hello(): Unit = {
+		println(s"Hello!!!!!!! {name}, my age is ${age}")
+	}
+}
+var person2 = Person2("Ignacio", 23)
+person2.hello() // Hello!!!!!!! Ignacio, my age is 23
