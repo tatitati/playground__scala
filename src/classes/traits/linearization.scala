@@ -12,8 +12,9 @@ person1.describe() // my name is Francisco and I'm 32 years old
 
 
 
-
-trait Developer extends Person { // This trait is extending a class Person. So, any class extending this trait must extends also the class Person (below)
+// This trait is extending a class Person. So, any class extending this trait must extends also the class Person (below)
+// we will need to see something like extends Person with Developer
+trait Developer extends Person {
 	var lenguage: String = _
 
 	def setSelenguage(lenguageCoding: String) = {
