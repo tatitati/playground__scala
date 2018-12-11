@@ -52,4 +52,6 @@ println(mapPerson) // Map(juan -> 32, antonio -> 50)
 
 
 
-
+// different syntax to create them
+val name = "manolo" :: "jacinto" :: "javi" :: Nil
+println(name) // List(manolo, jacinto, javi)
