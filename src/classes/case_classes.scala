@@ -9,7 +9,6 @@ println(person1.age) // 33
 
 
 
-println(Person1.unapply(person1)) // Some((Francisco,34))
 
 
 // class classes can have also custom methods
@@ -20,3 +19,17 @@ case class Person2(name: String, var age: Int) {
 }
 var person2 = Person2("Ignacio", 23)
 person2.hello() // Hello!!!!!!! Ignacio, my age is 23
+
+
+
+
+// case classes can use tupled to create objects from a tuple that looks like the list of constructor argument:
+var person1Params = ("Roberto", 343)
+println(Person1.tupled(person1Params)) // Person1(Roberto,343)
+
+
+// Case classes implements by default unnaply, which is to reverse a method to its initial arguments constructor
+var person1ParamsBack1 = Person1.unapply(Person1("Roberto", 343)).get
+var person1ParamsBack2 = Person1.unapply(Person1("Roberto", 343))
+println(person1ParamsBack1) // (Roberto,343)
+println(person1ParamsBack2) // Some((Roberto,343))
