@@ -9,7 +9,7 @@ println(person1.age) // 33
 
 
 
-
+println(Person1.unapply(person1)) // Some((Francisco,34))
 
 
 // class classes can have also custom methods
