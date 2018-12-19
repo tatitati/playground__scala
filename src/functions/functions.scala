@@ -16,12 +16,29 @@ println(hi3()) // hello3
 
 
 
+
+// functions with no arguments
+def sum: (Int, Int, String) = {
+	return (4, 2, "asdfasdfa")
+}
+
+def sum1: (Int, Int, String) = {
+	return (4, 2, "asdfasdfa")
+}
+
+println(sum) // (4,2,asdfasdfa)
+println(sum1) // (4,2,asdfasdfa)
+
+
+
+
+
+
 // declaration: Way 1
 var f = (x: Int, y: Int) => x + y
-println(f(2, 3)) // THe result of the operation is: 5
-
-// declaration: Way 2
 var f1: (Int, Int) => Int = (x, y) => x + y
+
+println(f(2, 3)) // THe result of the operation is: 5
 println(f1(2, 3)) // THe result of the operation is: 5
 
 
