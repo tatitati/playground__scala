@@ -104,3 +104,13 @@ println(squarer{3+3}) // 36 "6*6"
 
 
 
+
+// ???
+def fun: Int => String =
+}
+
+//def fun: Int => String = (arg: List[X]) => arg match {
+//	case x :: xs => f(x) :: fun(xs)
+//	case Nil => Nil
+//}
+

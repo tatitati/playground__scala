@@ -52,6 +52,12 @@ println(mapPerson) // Map(juan -> 32, antonio -> 50)
 
 
 
-// different syntax to create them
+// different syntax to create them. :: vs :::
 val name = "manolo" :: "jacinto" :: "javi" :: Nil
 println(name) // List(manolo, jacinto, javi)
+
+val name1 = "manolo" :: "jacinto" :: Nil
+val name2 = "manolo1" :: "jacinto1" :: Nil
+
+println(name1 :: name2) // List(List(manolo, jacinto), manolo1, jacinto1)
+println(name1 ::: name2) // List(manolo, jacinto, manolo1, jacinto1)
