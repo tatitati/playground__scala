@@ -22,12 +22,13 @@ person2.hello() // Hello!!!!!!! Ignacio, my age is 23
 
 
 
-
+// tupled
 // case classes can use tupled to create objects from a tuple that looks like the list of constructor argument:
 var person1Params = ("Roberto", 343)
 println(Person1.tupled(person1Params)) // Person1(Roberto,343)
 
 
+// unnaply
 // Case classes implements by default unnaply, which is to reverse a method to its initial arguments constructor
 var person1ParamsBack1 = Person1.unapply(Person1("Roberto", 343)).get
 var person1ParamsBack2 = Person1.unapply(Person1("Roberto", 343))
