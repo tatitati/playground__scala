@@ -22,5 +22,5 @@ var f = (x: Int, y: Int) => x + y
 println(math(f, 2, 3)) // THe result of the operation is: 5
 
 
-var f1: (Int, Int) => Int = (x, y) => x + y
-println(math(f1, 2, 3)) // THe result of the operation is: 5
+//var f1: (Int, Int) => Int = (x, y) => x + y
+//println(math(f1, 2, 3)) // THe result of the operation is: 5
