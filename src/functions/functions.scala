@@ -41,6 +41,13 @@ val (number1, number2) = returnMultiple()
 println(number1) // 34
 println(number2) // 89.35
 
+// declaration: Way 1
+var f = (x: Int, y: Int) => x + y
+println(f(2, 3)) // THe result of the operation is: 5
+
+// declaration: Way 2
+var f1: (Int, Int) => Int = (x, y) => x + y
+println(f1(2, 3)) // THe result of the operation is: 5
 
 
 //
@@ -101,16 +108,4 @@ def squarer(x: Int): Int = {
 }
 println(squarer(2)) // 4
 println(squarer{3+3}) // 36 "6*6"
-
-
-
-
-// ???
-def fun: Int => String =
-}
-
-//def fun: Int => String = (arg: List[X]) => arg match {
-//	case x :: xs => f(x) :: fun(xs)
-//	case Nil => Nil
-//}
 
