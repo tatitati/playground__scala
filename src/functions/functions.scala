@@ -25,7 +25,7 @@ println(sum(x = 2, y = 3)) // 5
 
 
 
-// paramter groups
+// parameter groups
 def concat(x: Int, y: Int)(t: Int): String = {
     s"Position: ($x, $y), at moment: $t"
 }
