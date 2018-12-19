@@ -15,6 +15,19 @@ println(hi3()) // hello3
 
 
 
+
+// declaration: Way 1
+var f = (x: Int, y: Int) => x + y
+println(f(2, 3)) // THe result of the operation is: 5
+
+// declaration: Way 2
+var f1: (Int, Int) => Int = (x, y) => x + y
+println(f1(2, 3)) // THe result of the operation is: 5
+
+
+
+
+
 // named paramters + default values
 def sum(x: Int, y: Int = 1000): Int = {
     x + y
@@ -22,6 +35,7 @@ def sum(x: Int, y: Int = 1000): Int = {
 println(sum(2, 3)) // 5
 println(sum(2)) // 1002
 println(sum(x = 2, y = 3)) // 5
+
 
 
 
@@ -33,6 +47,8 @@ println(concat(10, 30)(3600)) // Position: (10, 30), at moment: 3600
 
 
 
+
+
 // can return tuples, etc
 def returnMultiple(): (Int, Double) = {
     return (34, 89.35)
@@ -41,13 +57,7 @@ val (number1, number2) = returnMultiple()
 println(number1) // 34
 println(number2) // 89.35
 
-// declaration: Way 1
-var f = (x: Int, y: Int) => x + y
-println(f(2, 3)) // THe result of the operation is: 5
 
-// declaration: Way 2
-var f1: (Int, Int) => Int = (x, y) => x + y
-println(f1(2, 3)) // THe result of the operation is: 5
 
 
 //
