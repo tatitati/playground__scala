@@ -6,6 +6,7 @@ def sum1(a: Int, b: (Int) => Int): Int = {
 }
 
 assert(sum1(2,  (c: Int) => {c*10}) == 22)
+// assert(sum1(2,  3 + 3) == 22) // wrong
 
 
 
