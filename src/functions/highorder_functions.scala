@@ -29,10 +29,11 @@ println(func2(1)) // The result is 1
 //
 // passing a function as parameter
 //
+var f = (x: Int, y: Int) => x + y
+
 def math1(f:(Int, Int) => Int, x: Int, y: Int): String = {
   s"THe result of the operation is: " + f(x, y)
 }
-var f = (x: Int, y: Int) => x + y
 println(math1(f, 2, 3)) // THe result of the operation is: 5
 
 //var f1: (Int, Int) => Int = (x, y) => x + y
