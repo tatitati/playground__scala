@@ -13,8 +13,6 @@ assert(sum1(2,  (c: Int) => {c*10}) == 22)
 //
 // Second, using by-name arguments
 //
-
-
 def sum2(a: Int, b: => Int): Int = {
   a + b
 }
