@@ -46,7 +46,7 @@ println(newlist) // List(myfirst!!!, mysecond!!!, mythird!!!)
 
 
 val newlist2 = mylist.map(i => i + "!!!")
-println(newlist2) // println(newlist) // List(myfirst!!!, mysecond!!!, mythird!!!)
+println(newlist2) // List(myfirst!!!, mysecond!!!, mythird!!!)
 
 
 //

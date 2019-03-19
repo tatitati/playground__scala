@@ -1,12 +1,19 @@
 //
-// Functions literals  or lambadas or anonymous functions
+// with infered return type
 //
 val sum = (x: Int, y: Int) => x + y
-println(sum(2, 3)) // 5
 
+assert(
+	sum(2, 3) == 5
+)
 
+//
+// with explicit return type
+//
 val sum1: (Int , Int) => Int = (x, y) => { x + y }
-println(sum1(2, 3)) // 5
+assert(
+	sum1(2, 3) == 5
+)
 
 
 // functions literals can be defined inside of higher fucntions invocations

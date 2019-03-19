@@ -1,3 +1,5 @@
+
+// group arguments force you to use brackets for each group
 def sum1(a: Int)(b: Int)(c: Int): Int = {
   a + b + c
 }
